@@ -1,0 +1,67 @@
+/* home.css */
+
+#home {
+  height: 100vh;
+  background-image: url('../img/main.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+#home::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+#home .container {
+  position: relative;
+  z-index: 2;
+}
+
+#btn {
+  color: white;
+}
+
+/* CSS for bouncing the "Scroll" text and arrow icon */
+.bounce-container {
+  animation: floating 2s infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#home {
+  position: relative;
+  min-height: 100vh;
+}
+
+.bounce-container {
+  position: absolute;
+  bottom: 1px;
+  animation: floating 2s infinite;
+}
+
+.bounce-container p {
+  margin: 5px 0 0; /* Adjust the top margin to move "Swipe" lower */
+}

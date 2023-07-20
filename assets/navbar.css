@@ -1,0 +1,25 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    padding: 0;
+  }
+  
+.navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-nav .nav-link.btn {
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Set translucent black background for the buttons */
+    border-radius: 0.25rem;
+  }
+  
+  .navbar-nav .nav-link.btn:hover {
+    background-color: rgba(0, 0, 0, 0.6); /* Darken the background on hover */
+    color: white;
+  }
